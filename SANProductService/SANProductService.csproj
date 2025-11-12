@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.20"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="src\Product.API\Controllers\" />
+      <Folder Include="src\Product.API\Middleware\" />
+      <Folder Include="src\Product.Application\Interfaces\" />
+      <Folder Include="src\Product.Application\Services\" />
+      <Folder Include="src\Product.Domain\Events\" />
+      <Folder Include="src\Product.Domain\Repositories\" />
+      <Folder Include="src\Product.Domain\ValueObjects\" />
+      <Folder Include="src\Product.Infrastructure\Data\" />
+      <Folder Include="src\Product.Infrastructure\Repositories\" />
+      <Folder Include="test\" />
+    </ItemGroup>
+
+</Project>
