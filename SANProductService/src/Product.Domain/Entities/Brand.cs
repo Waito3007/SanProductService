@@ -1,8 +1,5 @@
 ﻿namespace SANProductService.Product.Domain.Entities;
 
-using System;
-using System.Collections.Generic;
-
 public class Brand
 {
     public Guid Id { get; set; }

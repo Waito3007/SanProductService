@@ -8,7 +8,8 @@ public class ProjectException : Exception
     public ResponseType ResponseType { get; }
     public bool Success { get; } = false;
 
-    public ProjectException(ResponseType responseType) : base(responseType.GetDescription())
+    public ProjectException(ResponseType responseType)
+        : base(responseType.GetDescription())
     {
         ResponseType = responseType;
     }
